@@ -1,0 +1,33 @@
+<%# ヘッダーをつくろうと思って中断してます。特にできてないので、変えてもらって構わないです〜 %>
+<%= stylesheet_link_tag "home", :media => "all" %>
+<body>
+  <header class="page-header wrapper">
+    <nav class="main-nav">
+      <span>
+        <%= link_to image_tag('logo.jpg', alt:"logo", class: "img", id: "logo"), '/pages/home'%>
+      </span>
+      <ul>
+        <li><a href="#" id="user_name">大戸吹貫</a>さん</li>
+        <li><a href="#">カート</a></li>
+      </ul>
+    </nav>
+    
+    <nav class="sub-nav">
+      <ul>
+        <li><a href="#">お宿</a></li>
+        <li><a href="#">お食事</a></li>
+        <li><a href="#">観光</a></li>
+      </ul>
+      <ul>
+        <li><a href="#" id="user_pagelink">マイページ</a></li>
+        <li><a href="#">ヘルプ・お問い合わせ</a></li>
+        <li><a href="#">初めての方</a></li>  
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div>
+      <%# <%= link_to image_tag('toppage.png', alt:"page image", width: "1000px",class: "img"), '/pages/product'%> %>
+    </div>
+  </main>
+</body>

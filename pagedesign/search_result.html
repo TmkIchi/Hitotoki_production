@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0, user-scalable=yes">
+    <title>Page Title</title>
+    <meta name="title" content="Page Title">
+    <meta name="description">
+    <meta name="keywords">
+    <meta property="og:site_name" content="Page Title">
+    <meta property="og:title" content="Page Title">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="og:description">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@">
+    <meta name="twitter:title" content="Page Title">
+    <meta name="twitter:description">
+    <meta name="twitter:image" content="">
+    <link rel="shortcut icon" href="img/icon/favicon/favicon.ico">
+    <link href="https://unpkg.com/swiper/css/swiper.min.css" rel="stylesheet" media="all">
+    <script src="https://unpkg.com/swiper/js/swiper.min.js" defer></script>
+    <!--link(href=pagePath + 'js/slick/slick.css', rel='stylesheet', type='text/css', media='all')-->
+    <!--link(href=pagePath + 'js/slick/slick-theme.css', rel='stylesheet', type='text/css', media='all')-->
+    <link href="./style.css" rel="stylesheet" type="text/css" media="all">
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js" defer></script>
+    <!--script(src=pagePath + 'js/lib/jquery.matchHeight-min.js', defer)-->
+    <!--script(src=pagePath + 'js/slick/slick.min.js', defer)-->
+    <script src="./js/common.js" defer></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:100,300,400,500,700,900&amp;display=swap&amp;subset=japanese" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP:400,600,700&amp;display=swap&amp;subset=japanese" rel="stylesheet">
+  </head>
+  <body>
+    <header id="siteHeader">
+      <div class="siteHeader__wrapper">
+        <div class="siteHeader__content">
+          <h1 class="siteHeader__logo">ひとときパス</h1>
+          <div class="siteHeader__search">
+            <form>
+              <div class="siteHeader__searchWrapper">
+                <input class="siteHeader__searchInput" type="text" placeholder="何かお探しですか？">
+                <button class="siteHeader__searchButton"><img src="images/icon_search_white.png" alt="検索"></button>
+              </div>
+            </form>
+          </div>
+          <div class="siteHeader__spMenu"><a href=""><span></span><span></span><span></span></a></div>
+          <div class="siteHeader__spSearch"><a class="open" href=""><i><img src="images/icon_search_orange.png" alt="検索"></i></a><a class="close" href=""><i><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.356 14.356"><polygon points="14.356 13.421 7.881 7.163 14.133 0.695 13.415 0 7.162 6.468 0.695 0.216 0 0.935 6.467 7.187 0.209 13.661 0.928 14.356 7.186 7.882 13.661 14.14 14.356 13.421"/></svg></i></a></div>
+        </div>
+        <div class="siteHeader__menu">
+          <p class="siteHeader__user"><span class="siteHeader__userName">咲弥</span><span class="siteHeader__userText">さん</span></p>
+          <ul class="siteHeader__link">
+            <li><a href="">ヘルプ・問い合わせ</a></li>
+            <li><a href="">初めての方</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="siteHeader__spSearchMenu">
+        <ul class="navSpSearchMenu">
+          <li>
+            <div class="navSpSearchMenu__item"><a href="">地域から探す</a></div>
+            <ul class="navSpSearchMenu__child">
+              <li><a href="">北海道</a></li>
+              <li><a href="">東北</a></li>
+              <li><a href="">北関東</a></li>
+              <li><a href="">首都圏</a></li>
+              <li><a href="">伊豆・箱根</a></li>
+              <li><a href="">北陸</a></li>
+              <li><a href="">甲信越</a></li>
+              <li><a href="">東海</a></li>
+              <li><a href="">近畿</a></li>
+              <li><a href="">山陽・山陰</a></li>
+              <li><a href="">四国</a></li>
+              <li><a href="">九州</a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="navSpSearchMenu__item"><a href="">シーンから探す</a></div>
+            <ul class="navSpSearchMenu__child">
+              <li><a href="">誕生日</a></li>
+              <li><a href="">記念日</a></li>
+              <li><a href="">プレゼント</a></li>
+              <li><a href="">女旅</a></li>
+              <li><a href="">男旅</a></li>
+              <li><a href="">新婚旅行</a></li>
+              <li><a href="">卒業旅行</a></li>
+              <li><a href="">初めての旅行デート</a></li>
+              <li><a href="">家族旅行</a></li>
+              <li><a href="">ペットと旅行</a></li>
+              <li><a href="">一人旅</a></li>
+              <li><a href="">お仕事</a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="navSpSearchMenu__item"><a class="active" href="">こだわりから探す</a></div>
+            <ul class="navSpSearchMenu__child" style="display: block;">
+              <li><a href="">温泉</a></li>
+              <li><a href="">高級宿</a></li>
+              <li><a href="">禁煙</a></li>
+              <li><a href="">駅近</a></li>
+              <li><a href="">コンビニ</a></li>
+              <li><a href="">食事が美味しい</a></li>
+              <li><a href="">部屋食</a></li>
+              <li><a href="">露天風呂</a></li>
+              <li><a href="">部屋に露天風呂</a></li>
+              <li><a href="">温泉街に近い</a></li>
+              <li><a href="">海が見える</a></li>
+              <li><a href="">雀卓付き</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <div class="pagetypeSearchResult" id="siteContent">
+      <div class="siteContent__container">
+        <main class="siteContent__main">
+          <article class="siteContent__article">
+            <section class="sectionTopSerchTicket">
+              <ul class="sectionTopSerchTicket__path">
+                <li><span>全国</span></li>
+                <li><span>東海地方</span></li>
+                <li><span>静岡県</span></li>
+                <li><span>東伊豆</span></li>
+              </ul>
+              <div class="sectionTopSerchTicket__area">
+                <div class="sectionTopSerchTicket__areaCol">
+                  <div class="formSelect">
+                    <select>
+                      <option>静岡県</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="sectionTopSerchTicket__areaCol">
+                  <div class="formSelect">
+                    <select>
+                      <option>東伊豆</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="sectionTopSerchTicket__range"><span class="sectionTopSerchTicket__rangePointer" style="left: 0;"><span>0円</span><i></i></span><span class="sectionTopSerchTicket__rangePointer" style="right: 0;"><span>上限なし</span><i></i></span></div>
+              <p class="sectionTopSerchTicket__tag"><a class="buttonAddTag" href=""><i><svg id="svg-icon-plus" data-name="svg-icon-plus" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 8"><polygon points="8 3.5 4.5 3.5 4.5 0 3.5 0 3.5 3.5 0 3.5 0 4.5 3.5 4.5 3.5 8 4.5 8 4.5 4.5 8 4.5 8 3.5"/></svg></i><span>タグを追加</span></a></p>
+              <p class="sectionTopSerchTicket__button"><a class="buttonSearch" href="">検索する</a></p>
+            </section>
+            <section class="sectionSearchResult">
+              <header class="sectionSearchResult__header">
+                <h2 class="sectionSearchResult__heading">検索結果</h2>
+                <div class="sectionSearchResult__nav">
+                  <div class="sectionSearchResult__pager">
+                    <p class="sectionSearchResult__pagerText">1〜30/全200件</p>
+                    <ul class="navPager">
+                      <li><a class="current" href="">1</a></li>
+                      <li><a href="">2</a></li>
+                      <li><a href="">3</a></li>
+                      <li><a href="">4</a></li>
+                      <li><span class="dot">…</span></li>
+                      <li><a href="">7</a></li>
+                    </ul>
+                  </div>
+                  <div class="sectionSearchResult__sort">
+                    <ul class="sectionSearchResult__sortList">
+                      <li><a class="current" href="">人気順</a></li>
+                      <li><a href="">新着順</a></li>
+                      <li><a href=""><span>料金が</span>安い順</a></li>
+                      <li><a href=""><span>料金が</span>高い順</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </header>
+              <div class="sectionSearchResult__content">
+                <ul class="listArticle">
+                  <li>
+                    <div class="listArticle__item">
+                      <figure class="listArticle__itemFigure">
+                        <picture>
+                          <source srcset="https://dummyimage.com/240x160/0e404d/fff.png" media="(max-width:768px)"><img src="https://dummyimage.com/216x124/0e404d/fff.png" alt="">
+                        </picture>
+                      </figure>
+                      <div class="listArticle__itemContent">
+                        <div class="listArticle__header">
+                          <h6 class="listArticle__itemHeading">咲弥旅館</h6>
+                          <p class="listArticle__itemLocation"><i><img src="images/icon_map_marker.png" alt=""></i><span><a href="">静岡県伊東市</a></span></p>
+                        </div>
+                        <p class="listArticle__itemText"><span>【1泊朝食】お仕事後でも間に合う！選べる和食or洋食</span><i><svg id="svg-icon-arrow-right" data-name="svg-icon-arrow-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10.314 15.536"><polygon points="10.314 7.838 1.313 0 0 1.508 7.494 8.034 0.034 13.972 1.279 15.536 10.28 8.375 10.314 7.838"/></svg></i></p>
+                        <div class="listArticle__itemData">
+                          <p class="listArticle__itemPrice"><em>14,000円</em><span>/1名1泊</span></p>
+                          <p class="listArticle__itemPriceSup">(消費税込13,200円〜1名1泊)</p>
+                          <ul class="listArticle__itemIcon">
+                            <li><img src="images/icon_nonsmoking_red.png" alt=""></li>
+                            <li><img src="images/icon_train_20min.png" alt=""></li>
+                            <li><img src="images/icon_onsen.png" alt=""></li>
+                            <li><img src="images/icon_breakfast.png" alt=""></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="listArticle__item">
+                      <figure class="listArticle__itemFigure">
+                        <picture>
+                          <source srcset="https://dummyimage.com/240x160/0e404d/fff.png" media="(max-width:768px)"><img src="https://dummyimage.com/216x124/0e404d/fff.png" alt="">
+                        </picture>
+                      </figure>
+                      <div class="listArticle__itemContent">
+                        <div class="listArticle__header">
+                          <h6 class="listArticle__itemHeading">咲弥旅館</h6>
+                          <p class="listArticle__itemLocation"><i><img src="images/icon_map_marker.png" alt=""></i><span><a href="">静岡県伊東市</a></span></p>
+                        </div>
+                        <p class="listArticle__itemText"><span>【1泊朝食】お仕事後でも間に合う！選べる和食or洋食</span><i><svg id="svg-icon-arrow-right" data-name="svg-icon-arrow-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10.314 15.536"><polygon points="10.314 7.838 1.313 0 0 1.508 7.494 8.034 0.034 13.972 1.279 15.536 10.28 8.375 10.314 7.838"/></svg></i></p>
+                        <div class="listArticle__itemData">
+                          <p class="listArticle__itemPrice"><em>14,000円</em><span>/1名1泊</span></p>
+                          <p class="listArticle__itemPriceSup">(消費税込13,200円〜1名1泊)</p>
+                          <ul class="listArticle__itemIcon">
+                            <li><img src="images/icon_nonsmoking_red.png" alt=""></li>
+                            <li><img src="images/icon_train_20min.png" alt=""></li>
+                            <li><img src="images/icon_onsen.png" alt=""></li>
+                            <li><img src="images/icon_breakfast.png" alt=""></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="listArticle__item">
+                      <figure class="listArticle__itemFigure">
+                        <picture>
+                          <source srcset="https://dummyimage.com/240x160/0e404d/fff.png" media="(max-width:768px)"><img src="https://dummyimage.com/216x124/0e404d/fff.png" alt="">
+                        </picture>
+                      </figure>
+                      <div class="listArticle__itemContent">
+                        <div class="listArticle__header">
+                          <h6 class="listArticle__itemHeading">咲弥旅館</h6>
+                          <p class="listArticle__itemLocation"><i><img src="images/icon_map_marker.png" alt=""></i><span><a href="">静岡県伊東市</a></span></p>
+                        </div>
+                        <p class="listArticle__itemText"><span>【1泊朝食】お仕事後でも間に合う！選べる和食or洋食</span><i><svg id="svg-icon-arrow-right" data-name="svg-icon-arrow-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10.314 15.536"><polygon points="10.314 7.838 1.313 0 0 1.508 7.494 8.034 0.034 13.972 1.279 15.536 10.28 8.375 10.314 7.838"/></svg></i></p>
+                        <div class="listArticle__itemData">
+                          <p class="listArticle__itemPrice"><em>14,000円</em><span>/1名1泊</span></p>
+                          <p class="listArticle__itemPriceSup">(消費税込13,200円〜1名1泊)</p>
+                          <ul class="listArticle__itemIcon">
+                            <li><img src="images/icon_nonsmoking_red.png" alt=""></li>
+                            <li><img src="images/icon_train_20min.png" alt=""></li>
+                            <li><img src="images/icon_onsen.png" alt=""></li>
+                            <li><img src="images/icon_breakfast.png" alt=""></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="listArticle__item">
+                      <figure class="listArticle__itemFigure">
+                        <picture>
+                          <source srcset="https://dummyimage.com/240x160/0e404d/fff.png" media="(max-width:768px)"><img src="https://dummyimage.com/216x124/0e404d/fff.png" alt="">
+                        </picture>
+                      </figure>
+                      <div class="listArticle__itemContent">
+                        <div class="listArticle__header">
+                          <h6 class="listArticle__itemHeading">咲弥旅館</h6>
+                          <p class="listArticle__itemLocation"><i><img src="images/icon_map_marker.png" alt=""></i><span><a href="">静岡県伊東市</a></span></p>
+                        </div>
+                        <p class="listArticle__itemText"><span>【1泊朝食】お仕事後でも間に合う！選べる和食or洋食</span><i><svg id="svg-icon-arrow-right" data-name="svg-icon-arrow-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10.314 15.536"><polygon points="10.314 7.838 1.313 0 0 1.508 7.494 8.034 0.034 13.972 1.279 15.536 10.28 8.375 10.314 7.838"/></svg></i></p>
+                        <div class="listArticle__itemData">
+                          <p class="listArticle__itemPrice"><em>14,000円</em><span>/1名1泊</span></p>
+                          <p class="listArticle__itemPriceSup">(消費税込13,200円〜1名1泊)</p>
+                          <ul class="listArticle__itemIcon">
+                            <li><img src="images/icon_nonsmoking_red.png" alt=""></li>
+                            <li><img src="images/icon_train_20min.png" alt=""></li>
+                            <li><img src="images/icon_onsen.png" alt=""></li>
+                            <li><img src="images/icon_breakfast.png" alt=""></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="listArticle__item">
+                      <figure class="listArticle__itemFigure">
+                        <picture>
+                          <source srcset="https://dummyimage.com/240x160/0e404d/fff.png" media="(max-width:768px)"><img src="https://dummyimage.com/216x124/0e404d/fff.png" alt="">
+                        </picture>
+                      </figure>
+                      <div class="listArticle__itemContent">
+                        <div class="listArticle__header">
+                          <h6 class="listArticle__itemHeading">咲弥旅館</h6>
+                          <p class="listArticle__itemLocation"><i><img src="images/icon_map_marker.png" alt=""></i><span><a href="">静岡県伊東市</a></span></p>
+                        </div>
+                        <p class="listArticle__itemText"><span>【1泊朝食】お仕事後でも間に合う！選べる和食or洋食</span><i><svg id="svg-icon-arrow-right" data-name="svg-icon-arrow-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10.314 15.536"><polygon points="10.314 7.838 1.313 0 0 1.508 7.494 8.034 0.034 13.972 1.279 15.536 10.28 8.375 10.314 7.838"/></svg></i></p>
+                        <div class="listArticle__itemData">
+                          <p class="listArticle__itemPrice"><em>14,000円</em><span>/1名1泊</span></p>
+                          <p class="listArticle__itemPriceSup">(消費税込13,200円〜1名1泊)</p>
+                          <ul class="listArticle__itemIcon">
+                            <li><img src="images/icon_nonsmoking_red.png" alt=""></li>
+                            <li><img src="images/icon_train_20min.png" alt=""></li>
+                            <li><img src="images/icon_onsen.png" alt=""></li>
+                            <li><img src="images/icon_breakfast.png" alt=""></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="listArticle__item">
+                      <figure class="listArticle__itemFigure">
+                        <picture>
+                          <source srcset="https://dummyimage.com/240x160/0e404d/fff.png" media="(max-width:768px)"><img src="https://dummyimage.com/216x124/0e404d/fff.png" alt="">
+                        </picture>
+                      </figure>
+                      <div class="listArticle__itemContent">
+                        <div class="listArticle__header">
+                          <h6 class="listArticle__itemHeading">咲弥旅館</h6>
+                          <p class="listArticle__itemLocation"><i><img src="images/icon_map_marker.png" alt=""></i><span><a href="">静岡県伊東市</a></span></p>
+                        </div>
+                        <p class="listArticle__itemText"><span>【1泊朝食】お仕事後でも間に合う！選べる和食or洋食</span><i><svg id="svg-icon-arrow-right" data-name="svg-icon-arrow-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10.314 15.536"><polygon points="10.314 7.838 1.313 0 0 1.508 7.494 8.034 0.034 13.972 1.279 15.536 10.28 8.375 10.314 7.838"/></svg></i></p>
+                        <div class="listArticle__itemData">
+                          <p class="listArticle__itemPrice"><em>14,000円</em><span>/1名1泊</span></p>
+                          <p class="listArticle__itemPriceSup">(消費税込13,200円〜1名1泊)</p>
+                          <ul class="listArticle__itemIcon">
+                            <li><img src="images/icon_nonsmoking_red.png" alt=""></li>
+                            <li><img src="images/icon_train_20min.png" alt=""></li>
+                            <li><img src="images/icon_onsen.png" alt=""></li>
+                            <li><img src="images/icon_breakfast.png" alt=""></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <div class="sectionSearchResult__contentPager">
+                  <ul class="navPager">
+                    <li><a class="current" href="">1</a></li>
+                    <li><a href="">2</a></li>
+                    <li><a href="">3</a></li>
+                    <li><a href="">4</a></li>
+                    <li><span class="dot">…</span></li>
+                    <li><a href="">7</a></li>
+                    <li class="next"><a href=""><i><svg id="svg-icon-arrow-right" data-name="svg-icon-arrow-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10.314 15.536"><polygon points="10.314 7.838 1.313 0 0 1.508 7.494 8.034 0.034 13.972 1.279 15.536 10.28 8.375 10.314 7.838"/></svg></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+          </article>
+        </main>
+        <aside class="siteContent__asideLeft">
+          <div class="navSearchResult">
+            <h6 class="navSearchResult__heading">都道府県</h6>
+            <div class="navSearchResult__item">
+              <div class="formSelect">
+                <select>
+                  <option>静岡県</option>
+                </select>
+              </div>
+            </div>
+            <h6 class="navSearchResult__heading">地域名</h6>
+            <div class="navSearchResult__item">
+              <div class="formSelect">
+                <select>
+                  <option>伊豆半島</option>
+                </select>
+              </div>
+            </div>
+            <h6 class="navSearchResult__heading">地名</h6>
+            <div class="navSearchResult__item">
+              <div class="formSelect">
+                <select>
+                  <option>伊東</option>
+                </select>
+              </div>
+            </div>
+            <h6 class="navSearchResult__heading">タグを追加</h6>
+            <div class="navSearchResult__item">
+              <div class="formSelect">
+                <select>
+                  <option>シーンを追加</option>
+                </select>
+              </div>
+            </div>
+            <div class="navSearchResult__item">
+              <div class="formSelect">
+                <select>
+                  <option>こだわりを追加</option>
+                </select>
+              </div>
+            </div>
+            <div class="navSearchResult__item">
+              <div class="formSelect">
+                <select>
+                  <option>その他を追加</option>
+                </select>
+              </div>
+            </div>
+            <h6 class="navSearchResult__heading">タグを追加</h6>
+            <div class="navSearchResult__tag">
+              <p class="navSearchResult__tagHeading">シーンを追加</p>
+              <ul class="navSearchResult__tagList">
+                <li><a class="labelTagRound" href="">#誕生日</a></li>
+                <li><a class="labelTagRound selected" href="">#誕生日</a></li>
+                <li><a class="labelTagRound" href="">#誕生日</a></li>
+                <li><a class="labelTagRound" href="">#誕生日</a></li>
+                <li><a class="labelTagRound" href="">#誕生日</a></li>
+                <li><a class="labelTagRound" href="">#誕生日</a></li>
+                <li><a class="labelTagRound" href="">#誕生日</a></li>
+                <li><a class="labelTagRound" href="">#誕生日</a></li>
+                <li><a class="labelTagRound" href="">#誕生日</a></li>
+                <li><a class="labelTagRound" href="">#誕生日</a></li>
+                <li><a class="labelTagRound" href="">#誕生日</a></li>
+                <li><a class="labelTagRound" href="">#誕生日</a></li>
+                <li><a class="labelTagRound" href="">#誕生日</a></li>
+                <li><a class="labelTagRound" href="">#誕生日</a></li>
+                <li><a class="labelTagRound" href="">#誕生日</a></li>
+              </ul>
+              <p class="navSearchResult__more"><a href="">もっと見る</a></p>
+            </div>
+            <div class="navSearchResult__tag">
+              <p class="navSearchResult__tagHeading">こだわりを追加</p>
+              <ul class="navSearchResult__tagList">
+                <li><a class="labelTagRound" href="">#誕生日</a></li>
+                <li><a class="labelTagRound selected" href="">#誕生日</a></li>
+                <li><a class="labelTagRound" href="">#誕生日</a></li>
+                <li><a class="labelTagRound" href="">#誕生日</a></li>
+                <li><a class="labelTagRound" href="">#誕生日</a></li>
+                <li><a class="labelTagRound" href="">#誕生日</a></li>
+                <li><a class="labelTagRound" href="">#誕生日</a></li>
+                <li><a class="labelTagRound" href="">#誕生日</a></li>
+                <li><a class="labelTagRound" href="">#誕生日</a></li>
+                <li><a class="labelTagRound" href="">#誕生日</a></li>
+                <li><a class="labelTagRound" href="">#誕生日</a></li>
+                <li><a class="labelTagRound" href="">#誕生日</a></li>
+                <li><a class="labelTagRound" href="">#誕生日</a></li>
+                <li><a class="labelTagRound" href="">#誕生日</a></li>
+                <li><a class="labelTagRound" href="">#誕生日</a></li>
+              </ul>
+              <p class="navSearchResult__more"><a href="">もっと見る</a></p>
+            </div>
+            <h6 class="navSearchResult__heading">価格帯</h6>
+            <div class="navSearchResult__item typeRange">
+              <div class="col">
+                <div class="formSelect">
+                  <select>
+                    <option>0円</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col">
+                <p>〜</p>
+              </div>
+              <div class="col">
+                <div class="formSelect">
+                  <select>
+                    <option>上限なし</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <p class="navSearchResult__button"><a class="buttonSearch" href="">検索する</a></p>
+          </div>
+        </aside>
+      </div>
+    </div>
+    <footer id="siteFooter">
+      <div class="siteFooter__content">
+        <ul class="siteFooter__link">
+          <li><a href="">ひとときパスについて</a></li>
+          <li><a href="">お問い合わせ</a></li>
+          <li><a href="">利用規約</a></li>
+          <li><a href="">プライバシーポリシー</a></li>
+          <li><a href="">各施設様へ</a></li>
+          <li><a href="">運営会社</a></li>
+        </ul>
+        <p class="siteFooter__copyrights"><small class="siteFooter__copy">&copy; 2020 Sakuya,Inc.</small></p>
+      </div>
+    </footer>
+    <div class="navSpMenu">
+      <div class="navSpMenu__wrapper"></div>
+      <div class="navSpMenu__content">
+        <div class="navSpMenu__header">
+          <div class="navSpMenu__name"><em>咲弥</em><span>さん</span></div>
+          <div class="navSpMenu__close"><a href=""><i><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.356 14.356"><polygon class="fb6c0d56-5707-4aed-998d-a78db72ef0bf" points="14.356 13.421 7.881 7.163 14.133 0.695 13.415 0 7.162 6.468 0.695 0.216 0 0.935 6.467 7.187 0.209 13.661 0.928 14.356 7.186 7.882 13.661 14.14 14.356 13.421"/></svg></i></a></div>
+        </div>
+        <ul class="navSpMenu__link">
+          <li><a href="">ログイン</a></li>
+          <li><a href="">新規会員登録</a></li>
+        </ul>
+        <ul class="navSpMenu__link">
+          <li><a href="">注文履歴</a></li>
+          <li><a href="">登録情報の修正</a></li>
+          <li><a href="">クレジットカード情報</a></li>
+          <li><a href="">パスワード変更</a></li>
+        </ul>
+        <ul class="navSpMenu__link">
+          <li><a href="">ひとときパスとは</a></li>
+          <li><a href="">ご利用方法</a></li>
+          <li><a href="">よくある質問</a></li>
+          <li><a href="">会社概要</a></li>
+          <li><a href="">問い合わせ</a></li>
+        </ul>
+        <ul class="navSpMenu__link">
+          <li><a href="">ログアウト</a></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

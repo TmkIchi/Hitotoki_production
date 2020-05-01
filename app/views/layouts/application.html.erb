@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="jp">
+  <head>
+    <title>ひとときパス</title>
+    <meta charset="UTF-8">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+  <footer>
+    ©All rights reserved by Sakuya, Inc.
+  </footer>
+</html>
