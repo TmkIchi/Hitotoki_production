@@ -59,3 +59,11 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'bootstrap', '~> 4.4.1'
 gem 'jquery-rails'
+# divese gems
+gem 'devise'
+gem 'omniauth-twitter'
+#pry console
+gem "pry-rails"
+gem "pry-byebug"
+
+gem 'ancestry'

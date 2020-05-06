@@ -1,19 +1,47 @@
 <!DOCTYPE html>
 <html lang="jp">
   <head>
+    <%= stylesheet_link_tag 'style' %>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0, user-scalable=yes">
     <title>ひとときパス</title>
-    <meta charset="UTF-8">
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <meta name="title" content="Page Title">
+    <meta name="description">
+    <meta name="keywords">
+    <meta property="og:site_name" content="Page Title">
+    <meta property="og:title" content="Page Title">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="og:description">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@">
+    <meta name="twitter:title" content="Page Title">
+    <meta name="twitter:description">
+    <meta name="twitter:image" content="">
+    <link rel="shortcut icon" href="img/icon/favicon/favicon.ico">
+    <link href="https://unpkg.com/swiper/css/swiper.min.css" rel="stylesheet" media="all">
+    <script src="https://unpkg.com/swiper/js/swiper.min.js" defer></script>
+    <!--link(href=pagePath + 'js/slick/slick.css', rel='stylesheet', type='text/css', media='all')-->
+    <!--link(href=pagePath + 'js/slick/slick-theme.css', rel='stylesheet', type='text/css', media='all')-->
+    <link href="./style.css" rel="stylesheet" type="text/css" media="all">
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js" defer></script>
+    <!--script(src=pagePath + 'js/lib/jquery.matchHeight-min.js', defer)-->
+    <!--script(src=pagePath + 'js/slick/slick.min.js', defer)-->
+    <script src="./js/common.js" defer></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:100,300,400,500,700,900&amp;display=swap&amp;subset=japanese" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP:400,600,700&amp;display=swap&amp;subset=japanese" rel="stylesheet">
   </head>
 
   <body>
+    <%= render  "partial/header" %>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
     <%= yield %>
   </body>
   <footer>
-    ©All rights reserved by Sakuya, Inc.
+    <%= render  "partial/footer" %>
   </footer>
 </html>
